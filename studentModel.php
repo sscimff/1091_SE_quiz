@@ -5,7 +5,7 @@ require_once("dbconnect.php");
 // 學生申請
 function add($name, $id, $dad, $mom, $species) {
     global $conn;
-    $sql = "INSERT INTO form (name, id, dad, mom, species) VALUES ('$name', $id, '$dad', '$mom', '$species');";
+    $sql = "INSERT INTO form (name, id, dad, mom, species, status) VALUES ('$name', $id, '$dad', '$mom', '$species', '導師未簽注');";
     mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
 }
 
