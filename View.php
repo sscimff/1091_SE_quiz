@@ -33,11 +33,11 @@ while ($rs=mysqli_fetch_assoc($result)) {
     echo "<td>{$rs['mom']}</td>";
     echo "<td>{$rs['species']}</td>";
     //echo "<td>{$rs['status']}</td>";
-    echo "<td>{$rs['t_content']}</td>";
-    echo "<td>{$rs['t_sign']}</td>";
-    echo "<td>{$rs['s_result']}</td>";
-    echo "<td>{$rs['s_sign']}</td>";
-    echo "<td>{$rs['p_sign']}</td></tr>";
+    // echo "<td>{$rs['t_content']}</td>";
+    // echo "<td>{$rs['t_sign']}</td>";
+    // echo "<td>{$rs['s_result']}</td>";
+    // echo "<td>{$rs['s_sign']}</td>";
+    // echo "<td>{$rs['p_sign']}</td></tr>";
 }
 ?>
 </table>
