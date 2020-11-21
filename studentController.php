@@ -12,9 +12,6 @@ $s_result=mysqli_escape_string($conn, $_POST['s_result']);
 $s_sign=mysqli_escape_string($conn, $_POST['s_sign']);
 $p_sign=mysqli_escape_string($conn, $_POST['p_sign']);
 add($name, $id, $dad, $mom, $species);
-addt($t_content, $t_sign, );
-adds($s_result, $s_sign, );
-addp($p_sign, );
 // echo "Message:".$_POST['id'] ."completed.";
 echo "Message: Completed.";
 ?>
