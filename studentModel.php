@@ -10,9 +10,9 @@ function add($name, $id, $dad, $mom, $species) {
 }
 
 // 檢視狀態
-function show($id) {
+function show() {
     global $conn;
-    $sql = "SELECT * FROM form WHERE id=$id;";
+    $sql = "SELECT * FROM form WHERE 1;";
     $result = mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
     return $result;
 }
