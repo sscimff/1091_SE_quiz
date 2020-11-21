@@ -11,14 +11,15 @@ require("dbconnect.php");
 <body>
 <h1>校長簽核</h1>
 <form method="post" action="pController.php">
-      申請者學號： <input name="id" type="int" id="id" /><br>
-      校長簽核：<select name="status" type="text" id="status" /><br>
+    申請者學號： <input name="id" type="int" id="id" /><br>
+    校長簽核：<select name="status" type="text" id="status" /><br>
                 <option value='決行(結案)'>決行</option>
                 <option value='否決'>否決</option>
-                </select>
-      <input name="p_sign" type="text" id="p_sign" /> <br>
-      <input type="submit" name="Submit" value="送出" />
-      <br>
+            </select>
+    <input name="p_sign" type="text" id="p_sign" /> <br>
+    <input type="submit" name="Submit" value="送出" />
+    <button><a href="loginForm.php">取消</a><br></button>
+    <br>
 </form>
 </tr>
 </table>

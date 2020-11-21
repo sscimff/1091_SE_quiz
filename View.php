@@ -15,20 +15,20 @@ $result=show();
 <title>無標題文件</title>
 <h1>貧困學生補助經費申請一覽</h1>
 <table width="1000" border="1">
-  <tr>
-    <td>學生姓名</td>
-    <td>學號</td>
-    <td>父親姓名</td>
-    <td>母親姓名</td>
-    <td>申請種類</td>
-    <td>導師訪視說明</td>
-    <td>導師簽章</td>
-    <td>秘書審核結果</td>
-    <td>秘書審查意見</td>
-    <td>秘書簽章</td>
-    <td>校長簽核</td>
-    <td>申請狀態</td>
-  </tr>
+    <tr>
+        <td>學生姓名</td>
+        <td>學號</td>
+        <td>父親姓名</td>
+        <td>母親姓名</td>
+        <td>申請種類</td>
+        <td>導師訪視說明</td>
+        <td>導師簽章</td>
+        <td>秘書審核結果</td>
+        <td>秘書審查意見</td>
+        <td>秘書簽章</td>
+        <td>校長簽核</td>
+        <td>申請狀態</td>
+    </tr>
 <?php
 
 while ($rs=mysqli_fetch_assoc($result)) {

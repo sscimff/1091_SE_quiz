@@ -25,7 +25,8 @@ $rs=mysqli_fetch_assoc($result);//拆開
                 <option value='家庭突發因素'>家庭突發因素</option>
             </select>
     <br>
-    <input type="submit" name="Submit" value="送出" /><br>
+    <input type="submit" name="Submit" value="送出" />
+    <button><a href="loginForm.php">取消</a><br></button>
 </form>
 </body>
 </html>

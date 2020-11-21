@@ -9,15 +9,16 @@ require("dbconnect.php");
 <title>Teacher</title>
 </head>
 <body>
-<h1>Teacher Task</h1>
+<h1>導師簽注</h1>
 <form method="post" action="tController.php">
 
-      申請者學號： <input name="id" type="int" id="id" /><br>
-      導師訪視說明： <input name="t_content" type="text" id="t_content" /> <br>
-      導師簽章： <input name="t_sign" type="text" id="t_sign" /> <br>
+    申請者學號： <input name="id" type="int" id="id" /><br>
+    導師訪視說明： <input name="t_content" type="text" id="t_content" /> <br>
+    導師簽章： <input name="t_sign" type="text" id="t_sign" /> <br>
 
-      <input type="submit" name="Submit" value="送出" />
-      <br>
+    <input type="submit" name="Submit" value="送出" />
+    <button><a href="loginForm.php">取消</a><br></button>
+    <br>
 </form>
 </tr>
 </table>
