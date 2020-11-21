@@ -5,7 +5,7 @@ require_once("dbconnect.php");
 // 校長核決(結案)
 function close($p_sign, $id) {
     global $conn;
-    $sql = "UPDATE form SET p_sign=$p_sign status='結案' WHERE id=$id and status='秘書尚未簽注');";
+    $sql = "UPDATE form SET p_sign=$p_sign status='結案' WHERE id=$id and status='校長尚未核決');";
     mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
 }
 // 校長否決
