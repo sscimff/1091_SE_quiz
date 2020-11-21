@@ -1,6 +1,9 @@
 <?php
 session_start();
 require("studentModel.php");
+require("tModel.php");
+require("secretaryModel.php");
+require("pModel.php");
 require("Model.php");
 $result=show();
 
@@ -10,7 +13,7 @@ $result=show();
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>無標題文件</title>
-<h1>貧困學生補助經費申請表狀態查詢</h1>
+<h1>貧困學生補助經費申請一覽</h1>
 <table width="1000" border="1">
   <tr>
     <td>學生姓名</td>
