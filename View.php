@@ -17,8 +17,12 @@ $result=show();
     <td>父親姓名</td>
     <td>母親姓名</td>
     <td>申請種類</td>
-    <td>申請狀態</td>
-    <td>-</td>
+    <!--<td>申請狀態</td>-->
+    <td>導師訪視說明</td>
+    <td>導師簽章</td>
+    <td>秘書審核結果</td>
+    <td>秘書簽章</td>
+    <td>校長簽核</td>
   </tr>
 <?php
 
@@ -28,7 +32,12 @@ while ($rs=mysqli_fetch_assoc($result)) {
     echo "<td>{$rs['dad']}</td>";
     echo "<td>{$rs['mom']}</td>";
     echo "<td>{$rs['species']}</td>";
-    echo "</td></tr>";
+    //echo "<td>{$rs['status']}</td>";
+    echo "<td>{$rs['t_content']}</td>";
+    echo "<td>{$rs['t_sign']}</td>";
+    echo "<td>{$rs['s_result']}</td>";
+    echo "<td>{$rs['s_sign']}</td>";
+    echo "<td>{$rs['p_sign']}</td></tr>";
 }
 ?>
 </table>
