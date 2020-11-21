@@ -5,8 +5,8 @@ require("todoStudent.php");
 $id = (int)$_GET['id'];
 $rs = getJobDetail($id);
 if (! $rs) {
-	echo "no data found";
-	exit(0);
+    echo "no data found";
+    exit(0);
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -22,7 +22,7 @@ if (! $rs) {
       秘書審核結果:准予補助 <input name="msg" type="text" id="msg" /> 元(若輸入0元則不予以補助)<br>
       秘書審查意見: <input name="msg" type="text" id="msg" /> <br>
       秘書簽章: <input name="msg" type="text" id="msg" /> <br>
-	  
+      
       <input type="submit" name="Submit" value="送出" />
       <br>
 </form>
