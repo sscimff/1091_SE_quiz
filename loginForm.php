@@ -1,7 +1,7 @@
 <?php
 session_start();
 //set the login mark to empty
-$_SESSION['uID'] = "";
+$_SESSION['id'] = "";
 ?>
 <h1>Login Form</h1><hr />
 <form method="post" action="studentView.php">
