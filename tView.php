@@ -9,7 +9,7 @@ require("dbconnect.php");
 <title>Teacher</title>
 </head>
 <body>
-<h1>Teacher Task</h1>
+<h1>導師簽注</h1>
 <form method="post" action="tController.php">
 
       申請者學號： <input name="id" type="int" id="id" /><br>
