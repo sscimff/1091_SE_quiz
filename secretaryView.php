@@ -15,7 +15,7 @@ require("dbconnect.php");
 
     申請者學號： <input name="id" type="int" id="id" /><br>
     秘書審核結果：准予補助 <input name="s_result" type="text" id="s_result" /> 元(若輸入0元則不予以補助)<br>
-    秘書審查意見：<input name="msg" type="text" id="msg" /> <br>
+    秘書審查意見：<input name="s_content" type="text" id="s_content" /> <br>
     秘書簽章：<input name="s_sign" type="text" id="s_sign" /> <br>
     <input type="submit" name="Submit" value="送出" />
     <br>
