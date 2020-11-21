@@ -18,7 +18,7 @@ require("dbconnect.php");
             </select>
     <input name="p_sign" type="text" id="p_sign" /> <br>
     <input type="submit" name="Submit" value="送出" />
-    <button><a href="loginForm.php">取消</a><br></button>
+    <button><a href="login.php">取消</a><br></button>
     <br>
 </form>
 </tr>
