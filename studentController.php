@@ -9,7 +9,6 @@ $species=mysqli_escape_string($conn, $_POST['species']);
 add($name, $id, $dad, $mom, $species);
 // echo "Message:".$_POST['id'] ."completed.";
 echo "Message: Completed.";
-show($id)
 ?>
 
 
