@@ -8,6 +8,21 @@ function add($name, $id, $dad, $mom, $species) {
     $sql = "INSERT INTO form (name, id, dad, mom, species) VALUES ('$name', $id, '$dad', '$mom', '$species');";
     mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
 }
+function addt($t_content, $t_sign) {
+    global $conn;
+    $sql = "INSERT INTO form (t_content, t_sign) VALUES ('$t_content', '$t_sign', );";
+    mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
+}
+function adds($s_result, $s_sign) {
+    global $conn;
+    $sql = "INSERT INTO form (s_result, s_sign) VALUES ('$s_result', '$s_sign', );";
+    mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
+}
+function addp($p_sign) {
+    global $conn;
+    $sql = "INSERT INTO form (p_sign) VALUES ('$p_sign');";
+    mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
+}
 
 // 檢視狀態
 function show() {

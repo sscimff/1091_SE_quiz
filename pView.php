@@ -17,7 +17,7 @@ if (! $rs) {
 </head>
 <body>
 <h1>Principal Task</h1>
-<form method="post" action="todoStudent.php">
+<form method="post" action="studentController.php">
       校長簽核:<select>
                 <option>決行</option>
                 <option>否決</option>
