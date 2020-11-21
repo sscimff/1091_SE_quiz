@@ -9,6 +9,7 @@ function close($status, $p_sign, $id) {
     mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
 }
 
+
 function p_show($p_sign, $id) {
     global $conn;
     $sql = "UPDATE form SET p_sign=$p_sign status='否決' WHERE id=$id and status='校長尚未核決');";

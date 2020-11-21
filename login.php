@@ -1,9 +1,5 @@
 <?php
 session_start();
-require("studentModel.php");
-require("tModel.php");
-require("secretaryModel.php");
-require("pModel.php");
 require("Model.php");
 $result=show();
 

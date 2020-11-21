@@ -1,6 +1,6 @@
 <?php
 // view, model 之間溝通
-require("studentModel.php");
+require("Model.php");
 $id=$_POST['id'];
 $name=mysqli_escape_string($conn, $_POST['name']);
 $dad=mysqli_escape_string($conn, $_POST['dad']);
