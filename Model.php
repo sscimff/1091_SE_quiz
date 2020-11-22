@@ -12,7 +12,7 @@ function add($name, $id, $dad, $mom, $species) {
 // 學生檢視狀態
 function student_show($id) {
     global $conn;
-    $sql = "SELECT * FROM form WHERE id=1;";
+    $sql = "SELECT * FROM form WHERE id=$id;";
     $result = mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
     return $result;
 }
