@@ -10,8 +10,8 @@ if ($s_result == 0) {
     header("Location: View.php");
     exit();
 }
-elseif ($s_result < 0) {
-    echo "補助金額不得小於 0，請重新輸入";
+elseif ($s_result < 0 or NULL) {
+    echo "補助金額不得小於 0 或空白，請返回上一頁並重新輸入";
     exit();
 }
 s_add($s_result, $s_content, $s_sign, $id);
