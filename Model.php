@@ -30,6 +30,11 @@ function t_show($id) {
     $sql = "SELECT * FROM form WHERE id=$id and (status='導師尚未簽注' or status='秘書尚未簽注');";
     mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
 }
+function s_add($s_result, $s_content, $s_sign, $id) {
+    global $conn;
+    $sql = "UPDATE form SET s_result='$s_result', s_content='$s_content', s_sign='$s_sign',status='校長尚未簽注' WHERE id=$id;";
+    mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
+}
 
 // 校長核決
 function close($status, $p_sign, $id) {
