@@ -31,6 +31,20 @@ function t_show($id) {
     mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
 }
 
+// 秘書簽注
+function s_add($s_result, $s_content, $s_sign, $id) {
+    global $conn;
+    $sql = "UPDATE form SET s_content='$s_content', s_result=$s_result, s_sign='$s_sign', status='校長尚未核決' WHERE id=$id;";
+    mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
+}
+
+// 秘書未符合補助條件
+function s_deny($id) {
+    global $conn;
+    $sql = "UPDATE form SET status='未符合補助條件' WHERE id=$id;";
+    mysqli_query($conn, $sql) or die("Insert failed, SQL query error"); //執行SQL
+}
+
 // 校長核決
 function close($status, $p_sign, $id) {
     global $conn;
